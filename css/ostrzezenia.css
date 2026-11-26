@@ -1,0 +1,74 @@
+/* Strona ostrzeżeń śniegowych */
+.ost-wrap{padding:44px 0 20px}
+.ost-head{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;justify-content:space-between;margin-bottom:26px}
+.zam-chip{display:flex;flex-direction:column;gap:2px;padding:14px 18px;border-radius:10px;border:1.5px solid var(--line);background:var(--coal);min-width:min(100%,360px)}
+.zam-chip b{font-family:var(--head);font-weight:700;font-size:1.15rem;color:var(--snow)}
+.zam-chip span{color:var(--mist);font-size:.95rem}
+.zam-chip.l0 b::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;background:#4fb37a;margin-right:8px;vertical-align:1px}
+.zam-chip.l1{border-color:#f5d547;background:rgba(245,213,71,.08)}
+.zam-chip.l2{border-color:#f39222;background:rgba(243,146,34,.10)}
+.zam-chip.l3{border-color:#e0402f;background:rgba(224,64,47,.12);animation:alarm 1.8s ease-in-out infinite}
+@keyframes alarm{50%{box-shadow:0 0 0 6px rgba(224,64,47,.18)}}
+.stan{color:var(--mist);font-size:.92rem}
+.stan::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--amber);margin-right:8px;animation:blink 2s ease-in-out infinite}
+@keyframes blink{50%{opacity:.25}}
+
+.panel{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:28px;align-items:start;margin:0 0 64px}
+.panel h2{font-family:var(--head);font-style:italic;font-weight:900;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1;margin:0 0 6px}
+.panel .sub{color:var(--mist);margin:0 0 18px;font-size:.98rem}
+.mapbox{position:relative;background:radial-gradient(80% 70% at 50% 40%,#0f1b27,#070b10);border:1px solid #1d2a37;border-radius:14px;padding:12px;overflow:hidden}
+.mapbox svg{display:block;width:100%;height:auto}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;margin:12px 2px 0;font-size:.9rem;color:var(--mist)}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:3px;margin-right:6px;vertical-align:-2px}
+.info{margin-top:12px;padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.04);border:1px solid var(--line);min-height:76px;font-size:.98rem}
+.info strong{font-family:var(--head);font-size:1.1rem}
+.info p{margin:6px 0 0;color:var(--soft)}
+.info .woj-n{color:var(--mist);font-size:.88rem;margin-left:6px}
+
+/* ścieżki mapy */
+.pow{stroke:#0a1016;stroke-width:.5;transition:fill .6s ease, opacity .6s ease;cursor:pointer;opacity:.0}
+svg.on .pow{opacity:1}
+.pow.lv0{fill:#1a2733}
+.pow:hover,.pow.sel{stroke:var(--amber-hot);stroke-width:2}
+.woj{fill:none;stroke:#5d7891;stroke-width:1.1;pointer-events:none;stroke-linejoin:round}
+.zam-ring{fill:none;stroke:var(--amber-hot);stroke-width:2.5;animation:ping 2s ease-out infinite;transform-box:fill-box;transform-origin:center}
+.zam-dot{fill:var(--amber-hot);stroke:#000;stroke-width:1.5}
+.zam-txt{fill:#fff;font:italic 900 17px var(--head);paint-order:stroke;stroke:#000;stroke-width:4px}
+@keyframes ping{0%{transform:scale(.4);opacity:1}100%{transform:scale(1.6);opacity:0}}
+.morze{fill:#0a1520}
+.tlo{fill:#18222c;stroke:#0a1016;stroke-width:.5}
+.kraj{stroke:#0a1016;stroke-width:.6;transition:fill .6s ease;cursor:pointer}
+.kraj.lv0{fill:#25384a}
+.kraj.brak{fill:#202a33}
+.kraj:hover{stroke:var(--amber-hot);stroke-width:1.6}
+.etyk text{font:800 13px var(--head);fill:#111;pointer-events:none}
+
+/* listy ostrzeżeń */
+.lista{list-style:none;margin:0;padding:0;display:grid;gap:10px;max-height:640px;overflow:auto;padding-right:4px}
+.ost{background:var(--coal);border:1px solid var(--line);border-left:5px solid;border-radius:10px;padding:14px 16px}
+.ost.l1{border-left-color:#f5d547}.ost.l2{border-left-color:#f39222}.ost.l3{border-left-color:#e0402f}
+.ost.tu{box-shadow:0 0 0 1.5px var(--amber) inset}
+.ost-top{display:flex;gap:12px;align-items:flex-start}
+.ost h3{font-family:var(--head);font-weight:700;font-size:1.15rem;margin:0;line-height:1.2}
+.ost .meta{color:var(--mist);font-size:.9rem;margin:2px 0 0}
+.ost .gdzie{color:var(--soft);font-size:.93rem;margin:8px 0 0}
+.ost .tu-txt{color:var(--amber-hot);font-weight:700;font-size:.92rem;margin:8px 0 0}
+.ost details{border:0;margin-top:6px}
+.ost summary{font:inherit;font-size:.93rem;color:var(--amber);padding:4px 0;cursor:pointer}
+.ost summary::after{display:none}
+.ost details p{color:var(--soft);font-size:.95rem;margin:6px 0 0}
+.badge{flex:none;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:6px;font:900 1rem var(--head);color:#111}
+.badge.l1{background:#f5d547}.badge.l2{background:#f39222}.badge.l3{background:#e0402f;color:#fff}
+.info .badge{width:22px;height:22px;font-size:.85rem;vertical-align:-4px;margin-right:4px}
+.pusto{color:var(--mist);padding:18px;border:1px dashed var(--line);border-radius:10px}
+.zrodla{color:#7d848a;font-size:.88rem;margin:0 0 30px}
+.zrodla a{color:#9aa1a7}
+
+@media (max-width:900px){
+  .panel{grid-template-columns:1fr}
+  .lista{max-height:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .zam-ring,.zam-chip.l3,.stan::before{animation:none}
+  .pow,.kraj{transition:none}
+}

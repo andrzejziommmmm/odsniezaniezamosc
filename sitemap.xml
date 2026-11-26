@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://www.odsniezaniezamosc.pl/</loc>
-    <lastmod>2026-11-22</lastmod>
-    <image:image>
-      <image:loc>https://www.odsniezaniezamosc.pl/img/odsniezanie-zamosc-ladowarka-jcb-plug.jpg</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://www.odsniezaniezamosc.pl/img/odsniezanie-zamosc-jcb-express-logo.jpg</image:loc>
-    </image:image>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://www.odsniezaniezamosc.pl/</loc><lastmod>2026-11-24</lastmod><priority>1.0</priority><image:image><image:loc>https://www.odsniezaniezamosc.pl/img/odsniezanie-zamosc-ladowarka-jcb-plug.jpg</image:loc></image:image><image:image><image:loc>https://www.odsniezaniezamosc.pl/img/odsniezanie-zamosc-jcb-express-logo.jpg</image:loc></image:image></url>
+  <url><loc>https://www.odsniezaniezamosc.pl/odsniezanie-parkingow-zamosc/</loc><lastmod>2026-11-24</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.odsniezaniezamosc.pl/odsniezanie-posesji-zamosc/</loc><lastmod>2026-11-24</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.odsniezaniezamosc.pl/wywoz-sniegu-zamosc/</loc><lastmod>2026-11-24</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.odsniezaniezamosc.pl/odsniezanie-dla-firm-i-wspolnot/</loc><lastmod>2026-11-24</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.odsniezaniezamosc.pl/cennik-odsniezania-zamosc/</loc><lastmod>2026-11-24</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.odsniezaniezamosc.pl/obowiazek-odsniezania-chodnika/</loc><lastmod>2026-11-24</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.odsniezaniezamosc.pl/ostrzezenia-sniegowe/</loc><lastmod>2026-11-24</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.odsniezaniezamosc.pl/odsniezanie-gmina-zamosc/</loc><lastmod>2026-11-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.odsniezaniezamosc.pl/odsniezanie-szczebrzeszyn/</loc><lastmod>2026-11-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.odsniezaniezamosc.pl/odsniezanie-labunie/</loc><lastmod>2026-11-24</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.odsniezaniezamosc.pl/odsniezanie-stary-zamosc/</loc><lastmod>2026-11-24</lastmod><priority>0.7</priority></url>
 </urlset>

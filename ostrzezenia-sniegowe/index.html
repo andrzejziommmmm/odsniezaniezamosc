@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ostrzeżenia przed śniegiem IMGW – mapa Polski i Europy na żywo</title>
+<meta name="description" content="Aktualne ostrzeżenia IMGW przed intensywnymi opadami śniegu, zawiejami i oblodzeniem w powiatach oraz ostrzeżenia MeteoAlarm dla Europy. Mapa aktualizowana co 30 minut.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://www.odsniezaniezamosc.pl/ostrzezenia-sniegowe/">
+<meta name="geo.region" content="PL-LU">
+<meta name="geo.placename" content="Zamość">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Odśnieżanie Zamość – JCB Express">
+<meta property="og:title" content="Ostrzeżenia przed śniegiem IMGW – mapa Polski i Europy na żywo">
+<meta property="og:description" content="Aktualne ostrzeżenia IMGW przed intensywnymi opadami śniegu, zawiejami i oblodzeniem w powiatach oraz ostrzeżenia MeteoAlarm dla Europy. Mapa aktualizowana co 30 minut.">
+<meta property="og:url" content="https://www.odsniezaniezamosc.pl/ostrzezenia-sniegowe/">
+<meta property="og:image" content="https://www.odsniezaniezamosc.pl/img/odsniezanie-zamosc-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="format-detection" content="telephone=yes">
+<meta name="theme-color" content="#050505">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,500;0,700;1,800;1,900&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/podstrony.css"><link rel="stylesheet" href="/css/ostrzezenia.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Odśnieżanie Zamość", "item": "https://www.odsniezaniezamosc.pl/"}, {"@type": "ListItem", "position": 2, "name": "Ostrzeżenia śniegowe IMGW", "item": "https://www.odsniezaniezamosc.pl/ostrzezenia-sniegowe/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://www.odsniezaniezamosc.pl/ostrzezenia-sniegowe/", "name": "Ostrzeżenia przed śniegiem IMGW – mapa Polski i Europy na żywo", "inLanguage": "pl", "primaryImageOfPage": {"@type": "ImageObject", "url": "https://www.odsniezaniezamosc.pl/img/odsniezanie-zamosc-ladowarka-jcb-plug.jpg", "width": 600, "height": 800}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Jak często aktualizują się ostrzeżenia na mapie?", "acceptedAnswer": {"@type": "Answer", "text": "Automat pobiera ostrzeżenia z IMGW i MeteoAlarm co 30 minut. Godzinę ostatniej aktualizacji widać nad mapą."}}, {"@type": "Question", "name": "Co oznaczają stopnie ostrzeżeń IMGW?", "acceptedAnswer": {"@type": "Answer", "text": "Stopień 1 (żółty) oznacza zjawiska, które mogą utrudniać życie, np. opady śniegu do kilkunastu centymetrów. Stopień 2 (pomarańczowy) to zjawiska groźne, mogące powodować duże straty. Stopień 3 (czerwony) to zjawiska bardzo groźne, o dużej intensywności."}}, {"@type": "Question", "name": "Spadło dużo śniegu w Zamościu – co zrobić?", "acceptedAnswer": {"@type": "Answer", "text": "Zadzwoń pod 601 164 644. Przy ostrzeżeniu przed intensywnym śniegiem najlepiej umówić odśnieżanie zawczasu, zanim wszyscy wykonawcy będą zajęci."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Ostrzeżenia przed śniegiem: Polska i Europa", "description": "Aktualne ostrzeżenia IMGW przed intensywnymi opadami śniegu, zawiejami i oblodzeniem w powiatach oraz ostrzeżenia MeteoAlarm dla Europy. Mapa aktualizowana co 30 minut.", "inLanguage": "pl", "dateModified": "2026-11-24", "mainEntityOfPage": "https://www.odsniezaniezamosc.pl/ostrzezenia-sniegowe/", "author": {"@type": "Organization", "name": "JCB Express – Odśnieżanie Zamość", "url": "https://www.odsniezaniezamosc.pl/"}, "publisher": {"@type": "Organization", "name": "JCB Express – Odśnieżanie Zamość", "logo": {"@type": "ImageObject", "url": "https://www.odsniezaniezamosc.pl/img/odsniezanie-zamosc-jcb-express-logo.jpg"}}, "image": "https://www.odsniezaniezamosc.pl/img/odsniezanie-zamosc-og.jpg"}</script>
+</head>
+<body>
+<canvas id="snieg" aria-hidden="true"></canvas>
+
+<header class="hero">
+  <div class="wrap">
+    <nav class="bar" aria-label="Główna">
+      <a class="brand" href="/" aria-label="Odśnieżanie Zamość – strona główna">JCB <b>Express</b></a>
+      <a class="bar-tel" href="tel:+48601164644" aria-label="Zadzwoń: 601 164 644"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span class="num">601 164 644</span></a>
+    </nav>
+    <nav class="crumbs" aria-label="Okruszki">
+      <ol><li><a href="/">Odśnieżanie Zamość</a></li><li>Informacje</li><li aria-current="page">Ostrzeżenia śniegowe IMGW</li></ol>
+    </nav>
+    <div class="hero-in">
+      <h1>Ostrzeżenia przed śniegiem: Polska i Europa</h1>
+      <p class="lead">Mapa ostrzeżeń IMGW przed intensywnym śniegiem, zawiejami i oblodzeniem w każdym powiecie oraz ostrzeżenia śniegowe z całej Europy. Dane odświeżają się automatycznie co 30 minut.</p>
+      <a class="call" href="tel:+48601164644"><svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span><small>Zadzwoń teraz</small><strong>601 164 644</strong></span></a>
+    </div>
+  </div>
+  <div class="stripe" aria-hidden="true"></div>
+</header>
+
+<main>
+  <section class="ost-wrap"><div class="wrap">
+<div class="ost-head">
+  <div id="zam-status" class="zam-chip l0"><b>Sprawdzam ostrzeżenia dla Zamościa…</b><span>IMGW-PIB</span></div>
+  <p class="stan" id="ost-stan">Wczytuję dane…</p>
+</div>
+
+<div class="panel">
+  <div>
+    <h2>Polska: ostrzeżenia IMGW</h2>
+    <p class="sub">Intensywne opady śniegu, zawieje i zamiecie, oblodzenie, opady marznące. <span id="pl-ile"></span></p>
+    <div class="mapbox" id="mapa-pl"></div>
+    <div class="legend"><span><i style="background:#f5d547"></i>1. stopień</span><span><i style="background:#f39222"></i>2. stopień</span><span><i style="background:#e0402f"></i>3. stopień</span><span><i style="background:#1a2733;border:1px solid #33475a"></i>brak ostrzeżeń</span></div>
+    <div class="info" id="pl-info" aria-live="polite"></div>
+  </div>
+  <div>
+    <h2 style="font-size:1.6rem;margin-top:4px">Obowiązujące ostrzeżenia</h2>
+    <p class="sub">Od najwyższego stopnia.</p>
+    <ul class="lista" id="pl-lista"><li class="pusto">Wczytuję…</li></ul>
+  </div>
+</div>
+
+<div class="panel">
+  <div>
+    <h2>Europa: MeteoAlarm</h2>
+    <p class="sub">Ostrzeżenia przed śniegiem i lodem wydane przez krajowe służby meteorologiczne. <span id="eu-ile"></span></p>
+    <div class="mapbox" id="mapa-eu"></div>
+    <div class="legend"><span><i style="background:#f5d547"></i>żółty</span><span><i style="background:#f39222"></i>pomarańczowy</span><span><i style="background:#e0402f"></i>czerwony</span><span><i style="background:#25384a;border:1px solid #33475a"></i>brak ostrzeżeń</span></div>
+    <div class="info" id="eu-info" aria-live="polite"><strong>Najedź lub stuknij kraj</strong><p>Zobaczysz rodzaj ostrzeżenia i liczbę regionów.</p></div>
+  </div>
+  <div>
+    <h2 style="font-size:1.6rem;margin-top:4px">Kraje z ostrzeżeniami</h2>
+    <p class="sub">Najwyższy stopień w kraju.</p>
+    <ul class="lista" id="eu-lista"><li class="pusto">Wczytuję…</li></ul>
+  </div>
+</div>
+
+<p class="zrodla">Źródło danych dla Polski: Instytut Meteorologii i Gospodarki Wodnej – Państwowy Instytut Badawczy (<a href="https://danepubliczne.imgw.pl" rel="noopener" target="_blank">danepubliczne.imgw.pl</a>). Dane IMGW-PIB zostały przetworzone. Źródło danych dla Europy: <a href="https://www.meteoalarm.org" rel="noopener" target="_blank">MeteoAlarm</a> (EUMETNET). Mapa ma charakter informacyjny: oficjalne i najświeższe ostrzeżenia znajdziesz na <a href="https://meteo.imgw.pl" rel="noopener" target="_blank">meteo.imgw.pl</a> i <a href="https://www.meteoalarm.org" rel="noopener" target="_blank">meteoalarm.org</a>.</p>
+</div></section>
+  <article class="content" style="padding-top:0">
+    <div class="wrap narrow">
+
+      <h2>Najczęstsze pytania</h2>
+      <div class="faq"><details><summary>Jak często aktualizują się ostrzeżenia na mapie?</summary><p>Automat pobiera ostrzeżenia z IMGW i MeteoAlarm co 30 minut. Godzinę ostatniej aktualizacji widać nad mapą.</p></details><details><summary>Co oznaczają stopnie ostrzeżeń IMGW?</summary><p>Stopień 1 (żółty) oznacza zjawiska, które mogą utrudniać życie, np. opady śniegu do kilkunastu centymetrów. Stopień 2 (pomarańczowy) to zjawiska groźne, mogące powodować duże straty. Stopień 3 (czerwony) to zjawiska bardzo groźne, o dużej intensywności.</p></details><details><summary>Spadło dużo śniegu w Zamościu – co zrobić?</summary><p>Zadzwoń pod 601 164 644. Przy ostrzeżeniu przed intensywnym śniegiem najlepiej umówić odśnieżanie zawczasu, zanim wszyscy wykonawcy będą zajęci.</p></details></div>
+    </div>
+  </article>
+
+  <section class="related" aria-labelledby="rel-h">
+    <div class="wrap">
+      <h2 id="rel-h">Zobacz też</h2>
+      <ul class="links"><li><a href="/odsniezanie-parkingow-zamosc/">Odśnieżanie parkingów<span>Odśnieżanie parkingów i placów w Zamościu ładowarką z pługiem.</span></a></li><li><a href="/odsniezanie-dla-firm-i-wspolnot/">Dla firm i wspólnot<span>Stała umowa na odśnieżanie w Zamościu dla firm, sklepów, wspólnot mieszkaniowych i zarządców.</span></a></li><li><a href="/cennik-odsniezania-zamosc/">Cennik odśnieżania<span>Ile kosztuje odśnieżanie w Zamościu? Średnie stawki za odśnieżanie parkingów, wywóz śniegu i od czego zależy cena.</span></a></li><li><a href="/">Odśnieżanie Zamość<span>Strona główna: usługi, pogoda i alerty śniegowe dla Zamościa.</span></a></li></ul>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="tel-h">
+    <div class="wrap">
+      <h2 id="tel-h">Zasypało? Dzwoń, przyjedziemy.</h2>
+      <a class="call" href="tel:+48601164644"><svg width="32" height="32" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg><span><small>Zadzwoń teraz</small><strong>601 164 644</strong></span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><h3>Odśnieżanie Zamość</h3><ul><li><a href="/">Strona główna</a></li><li>Tel. <a href="tel:+48601164644">601 164 644</a></li><li>Zamość i okolice, 24/7</li></ul></div>
+    <div><h3>Usługi</h3><ul><li><a href="/odsniezanie-parkingow-zamosc/">Odśnieżanie parkingów</a></li><li><a href="/odsniezanie-posesji-zamosc/">Odśnieżanie posesji</a></li><li><a href="/wywoz-sniegu-zamosc/">Wywóz śniegu</a></li><li><a href="/odsniezanie-dla-firm-i-wspolnot/">Dla firm i wspólnot</a></li></ul></div>
+    <div><h3>Informacje</h3><ul><li><a href="/cennik-odsniezania-zamosc/">Cennik odśnieżania</a></li><li><a href="/obowiazek-odsniezania-chodnika/">Obowiązek odśnieżania chodnika</a></li><li><a href="/ostrzezenia-sniegowe/">Ostrzeżenia śniegowe IMGW</a></li></ul></div>
+    <div><h3>Okolice Zamościa</h3><ul><li><a href="/odsniezanie-gmina-zamosc/">Gmina Zamość</a></li><li><a href="/odsniezanie-szczebrzeszyn/">Szczebrzeszyn</a></li><li><a href="/odsniezanie-labunie/">Łabunie</a></li><li><a href="/odsniezanie-stary-zamosc/">Stary Zamość</a></li></ul></div>
+  </div>
+</footer>
+
+<a class="dock" href="tel:+48601164644" aria-label="Zadzwoń: 601 164 644"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg> Zadzwoń: 601 164 644</a>
+<button type="button" class="snow-toggle" id="snow-toggle" aria-pressed="true">❄ Śnieg: wł.</button>
+<script src="/js/snieg.js" defer></script><script src="/js/ostrzezenia.js" defer></script>
+</body>
+</html>

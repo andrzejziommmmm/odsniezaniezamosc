@@ -6,7 +6,7 @@
 <title>Odśnieżanie Zamość – JCB Express | tel. 601 164 644</title>
 <meta name="description" content="Odśnieżanie Zamość i okolice ładowarką JCB z pługiem. Posesje, parkingi, place, drogi dojazdowe, wywóz śniegu. Także w nocy i w weekendy. Zadzwoń: 601 164 644.">
 <meta name="keywords" content="odśnieżanie Zamość, odśnieżanie parkingów Zamość, odśnieżanie posesji Zamość, wywóz śniegu Zamość, odśnieżanie placów Zamość, pług Zamość, JCB Express Zamość">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="geo.region" content="PL-LU">
 <meta name="geo.placename" content="Zamość">
 <meta name="geo.position" content="50.7231;23.2520">
@@ -208,6 +208,16 @@ h2.sec{font-family:var(--head);font-style:italic;font-weight:900;font-size:clamp
 .area-grid p{color:#c9cdd1;margin:0 0 16px}
 .towns{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
 .towns li{padding:8px 16px;border:1.5px solid var(--line);border-radius:6px;font-weight:700;background:var(--coal)}
+.services h3 a,.towns a{color:inherit;text-decoration:none}
+.services h3 a:hover{color:var(--amber)}
+.services h3 a::after{content:" ›";color:var(--amber)}
+.towns a{text-decoration:underline;text-decoration-color:var(--amber);text-underline-offset:3px}
+footer .wrap.foot{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-bottom:22px}
+.foot h3{font-family:var(--head);font-weight:700;color:var(--snow);font-size:1.05rem;margin:0 0 8px}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li{padding:3px 0}
+.foot a{color:var(--mist);text-decoration:none}
+.foot a:hover{color:var(--amber)}
 .towns li.main{background:var(--amber);border-color:var(--amber);color:var(--black)}
 
 /* faq */
@@ -306,6 +316,17 @@ footer a{color:var(--amber)}
 .wx-msg a{color:var(--amber);font-weight:700}
 .wx-src{margin:14px 0 0;color:#6f767c;font-size:.85rem}
 .wx-src a{color:#8d959b}
+.imgw-box{display:flex;align-items:center;flex-wrap:wrap;gap:12px 16px;margin:20px 0 0;padding:14px 18px;border-radius:10px;border:1.5px solid #2b4058;background:rgba(18,40,62,.35);color:var(--snow);text-decoration:none;max-width:70ch}
+.imgw-box:hover{border-color:var(--amber)}
+.imgw-ico{color:var(--mist);display:grid}
+.imgw-txt{display:flex;flex-direction:column;flex:1 1 240px}
+.imgw-txt b{font-family:var(--head);font-weight:700;font-size:1.1rem}
+.imgw-txt span{color:#c9cdd1;font-size:.95rem}
+.imgw-go{color:var(--amber);font-weight:700;font-size:.95rem}
+.imgw-box.l0 .imgw-ico{color:#4fb37a}
+.imgw-box.l1{border-color:#f5d547}.imgw-box.l1 .imgw-ico{color:#f5d547}
+.imgw-box.l2{border-color:#f39222;background:rgba(243,146,34,.1)}.imgw-box.l2 .imgw-ico{color:#f39222}
+.imgw-box.l3{border-color:#e0402f;background:rgba(224,64,47,.12)}.imgw-box.l3 .imgw-ico{color:#e0402f}
 .snow-toggle{position:fixed;left:12px;bottom:12px;z-index:25;background:rgba(10,20,32,.8);color:var(--snow);
   border:1px solid #2b4058;border-radius:999px;padding:7px 12px;font:inherit;font-size:.85rem;cursor:pointer;backdrop-filter:blur(4px)}
 @media (max-width:880px){
@@ -375,7 +396,12 @@ footer a{color:var(--amber)}
     </div>
     <ul class="wx-days" id="wx-days" aria-label="Prognoza na najbliższe dni"></ul>
     <p class="wx-msg" id="wx-msg">Prognoza dla Zamościa aktualizuje się automatycznie. Gdy zapowiadają śnieg, zadzwoń wcześniej pod <a href="tel:+48601164644">601 164 644</a> i zarezerwuj odśnieżanie.</p>
-    <p class="wx-src">Dane pogodowe: <a href="https://open-meteo.com/" rel="noopener" target="_blank">Open-Meteo.com</a></p>
+    <a class="imgw-box" id="imgw-box" href="/ostrzezenia-sniegowe/">
+      <span class="imgw-ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3 2 20h20L12 3z"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 10v4M12 17v.5"/></svg></span>
+      <span class="imgw-txt"><b>Ostrzeżenia IMGW dla Zamościa</b><span>Sprawdzam…</span></span>
+      <span class="imgw-go">Mapa ostrzeżeń Polska i Europa ›</span>
+    </a>
+    <p class="wx-src">Dane pogodowe: <a href="https://open-meteo.com/" rel="noopener" target="_blank">Open-Meteo.com</a>. Ostrzeżenia: IMGW-PIB i MeteoAlarm.</p>
   </div>
 </section>
 
@@ -412,11 +438,11 @@ footer a{color:var(--amber)}
       <h2 class="sec" id="uslugi-h">Odśnieżanie w Zamościu i okolicy</h2>
       <p class="intro">Odśnieżamy dla domów jednorodzinnych, firm, sklepów, hurtowni, wspólnot mieszkaniowych i zarządców nieruchomości. Jeden telefon i wiesz, kiedy przyjedziemy.</p>
       <ul class="services">
-        <li><h3>Odśnieżanie posesji</h3><p>Podjazdy, bramy, place przy domu i dojazdy do garażu. Rano wyjeżdżasz autem bez łopaty w ręku.</p></li>
-        <li><h3>Parkingi i place</h3><p>Odśnieżanie parkingów w Zamościu przy sklepach, biurach, blokach i halach. Pracujemy przed otwarciem, żeby klienci mogli bezpiecznie zaparkować.</p></li>
+        <li><h3><a href="/odsniezanie-posesji-zamosc/">Odśnieżanie posesji</a></h3><p>Podjazdy, bramy, place przy domu i dojazdy do garażu. Rano wyjeżdżasz autem bez łopaty w ręku.</p></li>
+        <li><h3><a href="/odsniezanie-parkingow-zamosc/">Parkingi i place</a></h3><p>Odśnieżanie parkingów w Zamościu przy sklepach, biurach, blokach i halach. Pracujemy przed otwarciem, żeby klienci mogli bezpiecznie zaparkować.</p></li>
         <li><h3>Drogi dojazdowe</h3><p>Drogi wewnętrzne, dojazdy do posesji i zakładów, place manewrowe dla ciężarówek.</p></li>
-        <li><h3>Pryzmowanie i wywóz śniegu</h3><p>Zsuwamy śnieg w pryzmy w wyznaczonym miejscu, a gdy brakuje miejsca, ładujemy go do wywozu.</p></li>
-        <li><h3>Umowa na cały sezon</h3><p>Przyjeżdżamy sami po każdym opadzie, bez dzwonienia. Wygodne dla firm i wspólnot, które muszą mieć odśnieżone zawsze.</p></li>
+        <li><h3><a href="/wywoz-sniegu-zamosc/">Pryzmowanie i wywóz śniegu</a></h3><p>Zsuwamy śnieg w pryzmy w wyznaczonym miejscu, a gdy brakuje miejsca, ładujemy go do wywozu.</p></li>
+        <li><h3><a href="/odsniezanie-dla-firm-i-wspolnot/">Umowa na cały sezon</a></h3><p>Przyjeżdżamy sami po każdym opadzie, bez dzwonienia. Wygodne dla firm i wspólnot, które muszą mieć odśnieżone zawsze.</p></li>
         <li><h3>Interwencje na już</h3><p>Zasypało wjazd albo parking przed dostawą? Zadzwoń, ustalimy najszybszy możliwy dojazd.</p></li>
       </ul>
     </div>
@@ -425,7 +451,7 @@ footer a{color:var(--amber)}
   <section class="how" aria-labelledby="jak-h">
     <div class="wrap">
       <h2 class="sec" id="jak-h">Jak zamówić odśnieżanie</h2>
-      <p class="intro">Bez formularzy i czekania na wycenę mailem.</p>
+      <p class="intro">Bez formularzy i czekania na wycenę mailem. Orientacyjne stawki znajdziesz w <a href="/cennik-odsniezania-zamosc/" style="color:var(--amber)">cenniku odśnieżania w Zamościu</a>.</p>
       <ol class="steps">
         <li><h3>Dzwonisz pod <a href="tel:+48601164644">601 164 644</a></h3><p>Mówisz, gdzie jesteś i co trzeba odśnieżyć: podjazd, parking, plac.</p></li>
         <li><h3>Ustalamy termin i cenę</h3><p>Od razu przez telefon. Przy większym terenie możemy najpierw podjechać i obejrzeć.</p></li>
@@ -442,7 +468,7 @@ footer a{color:var(--amber)}
         <p>Dojeżdżamy też do miejscowości wokół Zamościa. Jeśli Twojej nie ma na liście, zadzwoń i zapytaj.</p>
       </div>
       <ul class="towns" aria-label="Obsługiwane miejscowości">
-        <li class="main">Zamość</li><li>Gmina Zamość</li><li>Szczebrzeszyn</li><li>Stary Zamość</li><li>Łabunie</li><li>Sitno</li><li>Skierbieszów</li><li>Nielisz</li><li>Płoskie</li><li>Sitaniec</li><li>Wysokie</li><li>Kalinowice</li>
+        <li class="main">Zamość</li><li><a href="/odsniezanie-gmina-zamosc/">Gmina Zamość</a></li><li><a href="/odsniezanie-szczebrzeszyn/">Szczebrzeszyn</a></li><li><a href="/odsniezanie-stary-zamosc/">Stary Zamość</a></li><li><a href="/odsniezanie-labunie/">Łabunie</a></li><li>Sitno</li><li>Skierbieszów</li><li>Nielisz</li><li>Płoskie</li><li>Sitaniec</li><li>Wysokie</li><li>Kalinowice</li>
       </ul>
     </div>
   </section>
@@ -471,6 +497,11 @@ footer a{color:var(--amber)}
 </main>
 
 <footer>
+  <div class="wrap foot">
+    <div><h3>Usługi</h3><ul><li><a href="/odsniezanie-parkingow-zamosc/">Odśnieżanie parkingów</a></li><li><a href="/odsniezanie-posesji-zamosc/">Odśnieżanie posesji</a></li><li><a href="/wywoz-sniegu-zamosc/">Wywóz śniegu</a></li><li><a href="/odsniezanie-dla-firm-i-wspolnot/">Dla firm i wspólnot</a></li></ul></div>
+    <div><h3>Informacje</h3><ul><li><a href="/cennik-odsniezania-zamosc/">Cennik odśnieżania</a></li><li><a href="/obowiazek-odsniezania-chodnika/">Obowiązek odśnieżania chodnika</a></li><li><a href="/ostrzezenia-sniegowe/">Ostrzeżenia śniegowe IMGW</a></li></ul></div>
+    <div><h3>Okolice Zamościa</h3><ul><li><a href="/odsniezanie-gmina-zamosc/">Gmina Zamość</a></li><li><a href="/odsniezanie-szczebrzeszyn/">Szczebrzeszyn</a></li><li><a href="/odsniezanie-labunie/">Łabunie</a></li><li><a href="/odsniezanie-stary-zamosc/">Stary Zamość</a></li></ul></div>
+  </div>
   <div class="wrap">
     <span>JCB Express – odśnieżanie Zamość: posesje, parkingi, place, wywóz śniegu</span>
     <span>Telefon: <a href="tel:+48601164644">601 164 644</a></span>
@@ -596,7 +627,7 @@ footer a{color:var(--amber)}
       if(first){ var dd=first.getDate()===new Date().getDate()?'dziś':(dniK[first.getDay()]); kiedy=' od '+dd+' ok. '+String(first.getHours()).padStart(2,'0')+':00'; }
       var heavy=sum>=5;
       var a=document.getElementById('alert');
-      document.getElementById('alert-txt').innerHTML=(snowingNow?'<strong>W Zamościu pada śnieg.</strong> ':'<strong>Alert śniegowy dla Zamościa:</strong> ')
+      if(!a.dataset.imgw) document.getElementById('alert-txt').innerHTML=(snowingNow?'<strong>W Zamościu pada śnieg.</strong> ':'<strong>Alert śniegowy dla Zamościa:</strong> ')
         +'prognoza ok. '+cm(Math.max(sum,0.5))+' cm śniegu'+kiedy+' (48 h). '+(heavy?'Intensywne opady, terminy szybko się zapełniają.':'Zarezerwuj odśnieżanie wcześniej.');
       if(heavy) a.classList.add('storm');
       var closed=false; try{closed=sessionStorage.getItem('alertX')==='1';}catch(e){}
@@ -618,6 +649,7 @@ footer a{color:var(--amber)}
   });
 })();
 </script>
+<script src="/js/ostrzezenia-mini.js" defer></script>
 
 </body>
 </html>
