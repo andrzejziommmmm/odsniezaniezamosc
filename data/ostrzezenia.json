@@ -1,1 +1,306 @@
-{"zrodla": {"pl": "IMGW-PIB, danepubliczne.imgw.pl", "eu": "MeteoAlarm / EUMETNET, meteoalarm.org"}, "pl": [], "eu": {}, "aktualizacja": null}
+{
+ "zrodla": {
+  "pl": "IMGW-PIB, danepubliczne.imgw.pl",
+  "eu": "MeteoAlarm / EUMETNET, meteoalarm.org"
+ },
+ "pl": [
+  {
+   "id": "Sk20261126045329721",
+   "zjawisko": "Intensywne opady śniegu",
+   "stopien": 1,
+   "prawd": "80",
+   "od": "2026-11-26T15:00:00+01:00",
+   "do": "2026-11-27T15:00:00+01:00",
+   "tresc": "Prognozowane są opady śniegu powodujące przyrost pokrywy śnieżnej miejscami o 10 cm do 15 cm, lokalnie do 20 cm.",
+   "komentarz": "Brak.",
+   "biuro": "Centralne Biuro Prognoz Meteorologicznych w Warszawie",
+   "teryt": [
+    "0206",
+    "0207",
+    "0208",
+    "0221",
+    "0224",
+    "0261",
+    "0265",
+    "1211",
+    "1215",
+    "1217",
+    "1602",
+    "1603",
+    "1605",
+    "1607",
+    "1610",
+    "2402",
+    "2403",
+    "2410",
+    "2411",
+    "2412",
+    "2415",
+    "2417",
+    "2461",
+    "2467",
+    "2473",
+    "2479"
+   ]
+  },
+  {
+   "id": "Sk20261126045335657",
+   "zjawisko": "Intensywne opady śniegu",
+   "stopien": 1,
+   "prawd": "80",
+   "od": "2026-11-26T18:00:00+01:00",
+   "do": "2026-11-27T18:00:00+01:00",
+   "tresc": "Prognozowane są opady śniegu powodujące przyrost pokrywy śnieżnej miejscami o 10 cm do 15 cm, lokalnie do 20 cm.",
+   "komentarz": "Brak.",
+   "biuro": "Centralne Biuro Prognoz Meteorologicznych w Warszawie",
+   "teryt": [
+    "1201",
+    "1202",
+    "1203",
+    "1205",
+    "1206",
+    "1207",
+    "1209",
+    "1210",
+    "1213",
+    "1216",
+    "1218",
+    "1219",
+    "1261",
+    "1262",
+    "1263",
+    "1611",
+    "1801",
+    "1802",
+    "1803",
+    "1805",
+    "1807",
+    "1815",
+    "1817",
+    "1819",
+    "1821",
+    "1861",
+    "2405",
+    "2408",
+    "2414",
+    "2462",
+    "2463",
+    "2466",
+    "2468",
+    "2469",
+    "2470",
+    "2471",
+    "2472",
+    "2474",
+    "2475",
+    "2476",
+    "2477",
+    "2478"
+   ]
+  }
+ ],
+ "pl_ok": true,
+ "eu": {
+  "AT": {
+   "stopien": 2,
+   "obszary": 100,
+   "przyklady": [
+    "Amstetten",
+    "Baden",
+    "Braunau am Inn",
+    "Bruck an der Leitha",
+    "Bruck-Mürzzuschlag",
+    "Deutschlandsberg"
+   ],
+   "zjawiska": [
+    "Snow-Icewarning"
+   ],
+   "do": "2026-11-26T23:00:00+00:00"
+  },
+  "BE": {
+   "stopien": 1,
+   "obszary": 6,
+   "przyklady": [
+    "Brabant",
+    "East Flanders",
+    "Hainaut",
+    "Luxembourg",
+    "Namur",
+    "West Flanders"
+   ],
+   "zjawiska": [
+    "Yellow warning for ice snow",
+    "Green warning for ice snow"
+   ],
+   "do": "2026-11-26T11:00:00+00:00"
+  },
+  "CZ": {
+   "stopien": 2,
+   "obszary": 20,
+   "przyklady": [
+    "Hlavní město Praha",
+    "Jihomoravský kraj (Blansko, Boskovice, Kuřim, Tišnov, Vyškov)",
+    "Jihomoravský kraj (Brno, Břeclav, Bučovice, Hodonín, Hustopeče, Ivančice, Kyjov, Mikulov, Moravský Krumlov, Pohořelice, Rosice, Slavkov u Brna, Šlapanice, Veselí nad Moravou, Znojmo, Židlochovice)",
+    "Jihočeský kraj (Blatná, Milevsko, Písek, Strakonice, Vimperk, Vodňany)",
+    "Jihočeský kraj (Dačice, Jindřichův Hradec, Kaplice, Trhové Sviny, Třeboň)",
+    "Jihočeský kraj (České Budějovice, Český Krumlov, Prachatice, Soběslav, Tábor, Týn nad Vltavou)"
+   ],
+   "zjawiska": [
+    "Major Snow Related Impact",
+    "Moderate Snow Related Impact"
+   ],
+   "do": "2026-11-27T10:59:59+00:00"
+  },
+  "EE": {
+   "stopien": 1,
+   "obszary": 13,
+   "przyklady": [
+    "Harju county",
+    "Ida-Viru county",
+    "Järva county",
+    "Jõgeva county",
+    "Lääne county",
+    "Lääne-Viru county"
+   ],
+   "zjawiska": [
+    "Glazed ice Level 1"
+   ],
+   "do": "2026-11-26T12:00:00+00:00"
+  },
+  "FR": {
+   "stopien": 1,
+   "obszary": 20,
+   "przyklady": [
+    "Aisne",
+    "Alpes-Maritimes",
+    "Alpes-de-Haute-Provence",
+    "Ardennes",
+    "Bas-Rhin",
+    "Doubs"
+   ],
+   "zjawiska": [
+    "Moderate snow-ice warning"
+   ],
+   "do": "2026-11-27T23:00:00+00:00"
+  },
+  "DE": {
+   "stopien": 1,
+   "obszary": 15,
+   "przyklady": [
+    "Kreis Altötting",
+    "Kreis Bad Tölz-Wolfratshausen",
+    "Kreis Berchtesgadener Land",
+    "Kreis Ebersberg",
+    "Kreis Garmisch-Partenkirchen",
+    "Kreis Miesbach"
+   ],
+   "zjawiska": [
+    "snowfall"
+   ],
+   "do": "2026-11-27T00:00:00+00:00"
+  },
+  "HU": {
+   "stopien": 2,
+   "obszary": 4,
+   "przyklady": [
+    "Central Hungary",
+    "Central Transdanubia",
+    "Northern Hungary",
+    "Western Transdanubia"
+   ],
+   "zjawiska": [
+    "orange snow-ice warning",
+    "yellow snow-ice warning"
+   ],
+   "do": "2026-11-26T22:59:59+00:00"
+  },
+  "IT": {
+   "stopien": 1,
+   "obszary": 4,
+   "przyklady": [
+    "Friuli Venezia Giulia",
+    "Lombardia",
+    "Trentino Alto Adige",
+    "Veneto"
+   ],
+   "zjawiska": [
+    "Yellow Snow-ice Warning"
+   ],
+   "do": "2026-11-26T11:59:00+00:00"
+  },
+  "PL": {
+   "stopien": 1,
+   "obszary": 68,
+   "przyklady": [
+    "Dolnośląskie Province Jelenia Góra County",
+    "Dolnośląskie Province Kamiennogórski County",
+    "Dolnośląskie Province Karkonoski County",
+    "Dolnośląskie Province Kłodzki County",
+    "Dolnośląskie Province Wałbrzych County",
+    "Dolnośląskie Province Wałbrzyski County"
+   ],
+   "zjawiska": [
+    "Yellow snow-ice warning"
+   ],
+   "do": "2026-11-27T17:00:00+00:00"
+  },
+  "RS": {
+   "stopien": 2,
+   "obszary": 1,
+   "przyklady": [
+    "Eastern Serbia"
+   ],
+   "zjawiska": [
+    "Snow and Ice orange"
+   ],
+   "do": "2026-11-26T22:59:59+00:00"
+  },
+  "SK": {
+   "stopien": 2,
+   "obszary": 61,
+   "przyklady": [
+    "Banská Bystrica",
+    "Banská Štiavnica",
+    "Bardejov",
+    "Bratislava",
+    "Brezno",
+    "Bytča"
+   ],
+   "zjawiska": [
+    "Severe snow warning",
+    "Moderate snow warning"
+   ],
+   "do": "2026-11-26T23:00:00+00:00"
+  },
+  "SI": {
+   "stopien": 1,
+   "obszary": 5,
+   "przyklady": [
+    "Slovenia / Central",
+    "Slovenia / North-East",
+    "Slovenia / North-West",
+    "Slovenia / South-East",
+    "Slovenia / South-West"
+   ],
+   "zjawiska": [
+    "Moderate Snow Warning"
+   ],
+   "do": "2026-11-27T05:59:00+00:00"
+  },
+  "ES": {
+   "stopien": 1,
+   "obszary": 2,
+   "przyklady": [
+    "Pirineo de Lleida",
+    "Valle de Arán"
+   ],
+   "zjawiska": [
+    "Moderate snow warning"
+   ],
+   "do": "2026-11-26T16:59:59+00:00"
+  }
+ },
+ "eu_ok": true,
+ "eu_bledy": [],
+ "aktualizacja": "2026-11-26T09:04:19+00:00"
+}
