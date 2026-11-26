@@ -64,7 +64,7 @@
       var naz = /^[A-ZŁŚŻŹĆ]/.test(n) ? 'Miasto ' + n : 'Powiat ' + n;
       var h = '<strong>' + esc(naz) + '</strong> <span class="woj-n">woj. ' + esc(woj[t.slice(0, 2)] || '') + '</span>';
       if (!ws.length) h += '<p>Brak ostrzeżeń przed śniegiem i oblodzeniem.</p>';
-      ws.forEach(function (w) { h += '<p><span class="badge l' + w.stopien + '">' + w.stopien + '</span> ' + esc(w.zjawisko) + ', do ' + esc(kiedy(w.do)) + '</p>'; });
+      ws.forEach(function (w) { h += '<p><span class="obadge l' + w.stopien + '">' + w.stopien + '</span> ' + esc(w.zjawisko) + ', do ' + esc(kiedy(w.do)) + '</p>'; });
       $('pl-info').innerHTML = h;
     }
     function zaznacz(e) {
@@ -100,7 +100,7 @@
       ul.innerHTML = d.pl.map(function (w) {
         var wo = {}; w.teryt.forEach(function (t) { var k = woj[t.slice(0, 2)]; if (k) wo[k] = 1; });
         var dotyczy = w.teryt.some(function (t) { return ZAMOSC.indexOf(t) > -1; });
-        return '<li class="ost l' + w.stopien + (dotyczy ? ' tu' : '') + '"><div class="ost-top"><span class="badge l' + w.stopien + '">' + w.stopien + '</span>' +
+        return '<li class="ost l' + w.stopien + (dotyczy ? ' tu' : '') + '"><div class="ost-top"><span class="obadge l' + w.stopien + '">' + w.stopien + '</span>' +
           '<div><h3>' + esc(w.zjawisko) + '</h3><p class="meta">' + esc(kiedy(w.od)) + ' – ' + esc(kiedy(w.do)) + (w.prawd ? ' · prawdopodobieństwo ' + esc(w.prawd) + '%' : '') + '</p></div></div>' +
           (dotyczy ? '<p class="tu-txt">Obejmuje Zamość lub powiat zamojski</p>' : '') +
           '<p class="gdzie">' + odm(w.teryt.length, 'powiat', 'powiaty', 'powiatów') + ' · woj. ' + esc(Object.keys(wo).join(', ')) + '</p>' +
@@ -128,12 +128,12 @@
     eg.addEventListener('mouseover', function (e) { var c = e.target.getAttribute && e.target.getAttribute('data-c'); if (c) euInfo(c); });
     function euInfo(c) {
       var w = d.eu[c];
-      $('eu-info').innerHTML = '<strong>' + esc(pl[c] || c) + '</strong>' + (w ? '<p><span class="badge l' + w.stopien + '">' + w.stopien + '</span> ' + esc(w.zjawiska.join(', ')) + '</p><p class="meta">' + odm(w.obszary, 'region', 'regiony', 'regionów') + (w.do ? ', do ' + esc(kiedy(w.do)) : '') + '</p>' : '<p>Brak ostrzeżeń przed śniegiem i oblodzeniem.</p>');
+      $('eu-info').innerHTML = '<strong>' + esc(pl[c] || c) + '</strong>' + (w ? '<p><span class="obadge l' + w.stopien + '">' + w.stopien + '</span> ' + esc(w.zjawiska.join(', ')) + '</p><p class="meta">' + odm(w.obszary, 'region', 'regiony', 'regionów') + (w.do ? ', do ' + esc(kiedy(w.do)) : '') + '</p>' : '<p>Brak ostrzeżeń przed śniegiem i oblodzeniem.</p>');
     }
     var kody = Object.keys(d.eu).sort(function (a, b) { return d.eu[b].stopien - d.eu[a].stopien || d.eu[b].obszary - d.eu[a].obszary; });
     $('eu-lista').innerHTML = kody.length ? kody.map(function (c) {
       var w = d.eu[c];
-      return '<li class="ost l' + w.stopien + '"><div class="ost-top"><span class="badge l' + w.stopien + '">' + w.stopien + '</span><div><h3>' + esc(pl[c] || c) + '</h3>' +
+      return '<li class="ost l' + w.stopien + '"><div class="ost-top"><span class="obadge l' + w.stopien + '">' + w.stopien + '</span><div><h3>' + esc(pl[c] || c) + '</h3>' +
         '<p class="meta">' + odm(w.obszary, 'region', 'regiony', 'regionów') + (w.do ? ' · do ' + esc(kiedy(w.do)) : '') + '</p></div></div>' +
         '<p class="gdzie">' + esc(w.przyklady.slice(0, 4).join(', ')) + (w.obszary > 4 ? '…' : '') + '</p></li>';
     }).join('') : '<li class="pusto">' + (d.aktualizacja ? 'Brak ostrzeżeń przed śniegiem w krajach MeteoAlarm.' : 'Lista pojawi się po pierwszym pobraniu danych.') + '</li>';

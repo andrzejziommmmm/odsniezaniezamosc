@@ -2,7 +2,8 @@
 (function () {
   var URLS = ['https://raw.githubusercontent.com/andrzejziommmmm/odsniezaniezamosc/main/data/ostrzezenia.json?t=' + Math.floor(Date.now() / 300000), '/data/ostrzezenia.json'];
   var ZAM = ['0620', '0664'], STOP = ['', '1. stopnia', '2. stopnia', '3. stopnia'];
-  var box = document.getElementById('imgw-box');
+  var box = document.getElementById('imgw-box') || document.createElement('a');
+  if (!box.querySelector('.imgw-txt')) box.innerHTML = '<span class="imgw-txt"><b></b><span></span></span>';
   function get(i) { return fetch(URLS[i], { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).catch(function () { if (i + 1 < URLS.length) return get(i + 1); throw 0; }); }
   function kiedy(iso) { var d = new Date(iso); return isNaN(d) ? '' : d.toLocaleString('pl-PL', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }); }
   get(0).then(function (d) {

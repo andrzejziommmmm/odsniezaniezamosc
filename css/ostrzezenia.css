@@ -57,9 +57,9 @@ svg.on .pow{opacity:1}
 .ost summary{font:inherit;font-size:.93rem;color:var(--amber);padding:4px 0;cursor:pointer}
 .ost summary::after{display:none}
 .ost details p{color:var(--soft);font-size:.95rem;margin:6px 0 0}
-.badge{flex:none;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:6px;font:900 1rem var(--head);color:#111}
-.badge.l1{background:#f5d547}.badge.l2{background:#f39222}.badge.l3{background:#e0402f;color:#fff}
-.info .badge{width:22px;height:22px;font-size:.85rem;vertical-align:-4px;margin-right:4px}
+.obadge{flex:none;display:inline-grid;place-items:center;width:28px;height:28px;border-radius:6px;font:900 1rem var(--head);color:#111}
+.obadge.l1{background:#f5d547}.obadge.l2{background:#f39222}.obadge.l3{background:#e0402f;color:#fff}
+.info .obadge{width:22px;height:22px;font-size:.85rem;vertical-align:-4px;margin-right:4px}
 .pusto{color:var(--mist);padding:18px;border:1px dashed var(--line);border-radius:10px}
 .zrodla{color:#7d848a;font-size:.88rem;margin:0 0 30px}
 .zrodla a{color:#9aa1a7}

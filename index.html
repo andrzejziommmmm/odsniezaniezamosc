@@ -104,6 +104,7 @@
   --amber-deep:#b97a00;
   --snow:#f2f4f5;
   --mist:#a6abb0;
+  --soft:#c9cdd1;
   --head:"Saira","Arial Narrow",sans-serif;
   --text:"Atkinson Hyperlegible",Verdana,sans-serif;
 }
@@ -338,7 +339,16 @@ footer a{color:var(--amber)}
   .alert a.go{display:none}
   .alert-ico{width:28px;height:28px}
 }
+
+/* sekcja ostrzeżeń na stronie głównej */
+.ostrzezenia-home{background:linear-gradient(180deg,var(--black) 0%,#08111a 100%);padding:64px 0 24px;border-top:1px solid #1d2a37}
+.oh-top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 24px;margin-bottom:20px}
+.oh-top h2{margin:0}
+.oh-more{color:var(--amber);font-weight:700;text-decoration:none;white-space:nowrap}
+.oh-more:hover{text-decoration:underline}
+.oh-h{font-family:var(--head);font-style:italic;font-weight:900;font-size:clamp(1.5rem,3.2vw,2rem);line-height:1.05;margin:0 0 6px}
 </style>
+<link rel="stylesheet" href="/css/ostrzezenia.css">
 </head>
 <body>
 
@@ -396,12 +406,52 @@ footer a{color:var(--amber)}
     </div>
     <ul class="wx-days" id="wx-days" aria-label="Prognoza na najbliższe dni"></ul>
     <p class="wx-msg" id="wx-msg">Prognoza dla Zamościa aktualizuje się automatycznie. Gdy zapowiadają śnieg, zadzwoń wcześniej pod <a href="tel:+48601164644">601 164 644</a> i zarezerwuj odśnieżanie.</p>
-    <a class="imgw-box" id="imgw-box" href="/ostrzezenia-sniegowe/">
-      <span class="imgw-ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3 2 20h20L12 3z"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 10v4M12 17v.5"/></svg></span>
-      <span class="imgw-txt"><b>Ostrzeżenia IMGW dla Zamościa</b><span>Sprawdzam…</span></span>
-      <span class="imgw-go">Mapa ostrzeżeń Polska i Europa ›</span>
-    </a>
     <p class="wx-src">Dane pogodowe: <a href="https://open-meteo.com/" rel="noopener" target="_blank">Open-Meteo.com</a>. Ostrzeżenia: IMGW-PIB i MeteoAlarm.</p>
+  </div>
+</section>
+
+<section class="ostrzezenia-home" id="ostrzezenia" aria-labelledby="ost-h">
+  <div class="wrap">
+    <div class="oh-top">
+      <h2 class="sec" id="ost-h">Ostrzeżenia przed śniegiem: Polska i Europa</h2>
+      <a class="oh-more" href="/ostrzezenia-sniegowe/">Pełna strona ostrzeżeń ›</a>
+    </div>
+    <div class="ost-head">
+      <div id="zam-status" class="zam-chip"><b>Sprawdzam ostrzeżenia dla Zamościa…</b><span>IMGW-PIB</span></div>
+      <p class="stan" id="ost-stan">Wczytuję dane…</p>
+    </div>
+
+    <div class="panel">
+      <div>
+        <h3 class="oh-h">Polska: ostrzeżenia IMGW</h3>
+        <p class="sub">Intensywne opady śniegu, zawieje i zamiecie, oblodzenie, opady marznące. <span id="pl-ile"></span></p>
+        <div class="mapbox" id="mapa-pl"></div>
+        <div class="legend"><span><i style="background:#f5d547"></i>1. stopień</span><span><i style="background:#f39222"></i>2. stopień</span><span><i style="background:#e0402f"></i>3. stopień</span><span><i style="background:#1a2733;border:1px solid #33475a"></i>brak ostrzeżeń</span></div>
+        <div class="info" id="pl-info" aria-live="polite"></div>
+      </div>
+      <div>
+        <h3 class="oh-h">Obowiązujące ostrzeżenia</h3>
+        <p class="sub">Od najwyższego stopnia.</p>
+        <ul class="lista" id="pl-lista"><li class="pusto">Wczytuję…</li></ul>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div>
+        <h3 class="oh-h">Europa: MeteoAlarm</h3>
+        <p class="sub">Ostrzeżenia przed śniegiem i lodem krajowych służb meteorologicznych. <span id="eu-ile"></span></p>
+        <div class="mapbox" id="mapa-eu"></div>
+        <div class="legend"><span><i style="background:#f5d547"></i>żółty</span><span><i style="background:#f39222"></i>pomarańczowy</span><span><i style="background:#e0402f"></i>czerwony</span><span><i style="background:#25384a;border:1px solid #33475a"></i>brak ostrzeżeń</span></div>
+        <div class="info" id="eu-info" aria-live="polite"><strong>Najedź lub stuknij kraj</strong><p>Zobaczysz rodzaj ostrzeżenia i liczbę regionów.</p></div>
+      </div>
+      <div>
+        <h3 class="oh-h">Kraje z ostrzeżeniami</h3>
+        <p class="sub">Najwyższy stopień w kraju.</p>
+        <ul class="lista" id="eu-lista"><li class="pusto">Wczytuję…</li></ul>
+      </div>
+    </div>
+
+    <p class="zrodla">Źródło danych dla Polski: Instytut Meteorologii i Gospodarki Wodnej – Państwowy Instytut Badawczy (<a href="https://danepubliczne.imgw.pl" rel="noopener" target="_blank">danepubliczne.imgw.pl</a>). Dane IMGW-PIB zostały przetworzone. Europa: <a href="https://www.meteoalarm.org" rel="noopener" target="_blank">MeteoAlarm</a> (EUMETNET). Oficjalne ostrzeżenia: <a href="https://meteo.imgw.pl" rel="noopener" target="_blank">meteo.imgw.pl</a>, <a href="https://www.meteoalarm.org" rel="noopener" target="_blank">meteoalarm.org</a>.</p>
   </div>
 </section>
 
@@ -451,7 +501,7 @@ footer a{color:var(--amber)}
   <section class="how" aria-labelledby="jak-h">
     <div class="wrap">
       <h2 class="sec" id="jak-h">Jak zamówić odśnieżanie</h2>
-      <p class="intro">Bez formularzy i czekania na wycenę mailem. Orientacyjne stawki znajdziesz w <a href="/cennik-odsniezania-zamosc/" style="color:var(--amber)">cenniku odśnieżania w Zamościu</a>.</p>
+      <p class="intro">Bez formularzy i czekania na wycenę mailem. Cenę podajemy od razu przez telefon: <a href="tel:+48601164644" style="color:var(--amber)">601 164 644</a>.</p>
       <ol class="steps">
         <li><h3>Dzwonisz pod <a href="tel:+48601164644">601 164 644</a></h3><p>Mówisz, gdzie jesteś i co trzeba odśnieżyć: podjazd, parking, plac.</p></li>
         <li><h3>Ustalamy termin i cenę</h3><p>Od razu przez telefon. Przy większym terenie możemy najpierw podjechać i obejrzeć.</p></li>
@@ -650,6 +700,14 @@ footer a{color:var(--amber)}
 })();
 </script>
 <script src="/js/ostrzezenia-mini.js" defer></script>
+<script>
+(function(){
+  var s=document.getElementById('ostrzezenia'),done=false;
+  function go(){ if(done) return; done=true; var j=document.createElement('script'); j.src='/js/ostrzezenia.js'; document.body.appendChild(j); }
+  if(!('IntersectionObserver' in window)) return go();
+  new IntersectionObserver(function(e,o){ if(e[0].isIntersecting){ o.disconnect(); go(); } },{rootMargin:'800px 0px'}).observe(s);
+})();
+</script>
 
 </body>
 </html>
