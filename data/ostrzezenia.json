@@ -103,18 +103,33 @@
    ]
   }
  ],
- "pl_ok": true,
+ "pl_ok": false,
  "eu": {
+  "CZ": {
+   "stopien": 1,
+   "obszary": 3,
+   "przyklady": [
+    "Moravskoslezský kraj (Bílovec, Bruntál, Český Těšín, Frýdek-Místek, Havířov, Kopřivnice, Nový Jičín, Odry, Ostrava, Rýmařov, Vítkov)",
+    "Olomoucký kraj (Hranice, Lipník nad Bečvou, Olomouc, Prostějov, Šternberk, Šumperk)",
+    "Olomoucký kraj (Jeseník)"
+   ],
+   "zjawiska": [
+    "Moderate Snow Related Impact"
+   ],
+   "do": "2026-11-28T19:59:59+00:00"
+  },
   "IS": {
    "stopien": 1,
-   "obszary": 1,
+   "obszary": 3,
    "przyklady": [
-    "Central highlands - Uninhabited part of Iceland"
+    "Central highlands - Uninhabited part of Iceland",
+    "Northeast Iceland",
+    "Northwest Iceland"
    ],
    "zjawiska": [
     "Weather Warning: Snow Storm"
    ],
-   "do": "2026-11-29T00:00:00+00:00"
+   "do": "2026-11-29T12:00:00+00:00"
   },
   "ME": {
    "stopien": 1,
@@ -126,22 +141,6 @@
     "Snow or Ice"
    ],
    "do": "2026-11-28T22:59:00+00:00"
-  },
-  "PL": {
-   "stopien": 1,
-   "obszary": 59,
-   "przyklady": [
-    "Dolnośląskie Province Jelenia Góra County",
-    "Dolnośląskie Province Kamiennogórski County",
-    "Dolnośląskie Province Karkonoski County",
-    "Dolnośląskie Province Kłodzki County",
-    "Dolnośląskie Province Wałbrzych County",
-    "Dolnośląskie Province Wałbrzyski County"
-   ],
-   "zjawiska": [
-    "Yellow snow-ice warning"
-   ],
-   "do": "2026-11-27T17:00:00+00:00"
   },
   "RS": {
    "stopien": 2,
@@ -172,6 +171,7 @@
     "Galanta"
    ],
    "zjawiska": [
+    "Moderate snow warning",
     "Moderate snowdrift warning"
    ],
    "do": "2026-11-29T07:00:00+00:00"
@@ -190,5 +190,5 @@
  },
  "eu_ok": true,
  "eu_bledy": [],
- "aktualizacja": "2026-11-27T11:22:18+00:00"
+ "aktualizacja": "2026-11-27T20:16:32+00:00"
 }
