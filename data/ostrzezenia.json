@@ -175,7 +175,8 @@
     "West Flanders"
    ],
    "zjawiska": [
-    "Yellow warning for ice snow"
+    "Yellow warning for ice snow",
+    "Green warning for ice snow"
    ],
    "do": "2026-11-27T10:00:00+00:00"
   },
@@ -227,19 +228,19 @@
   },
   "DE": {
    "stopien": 1,
-   "obszary": 15,
+   "obszary": 22,
    "przyklady": [
-    "Kreis Altötting",
-    "Kreis Bad Tölz-Wolfratshausen",
-    "Kreis Berchtesgadener Land",
-    "Kreis Ebersberg",
-    "Kreis Garmisch-Partenkirchen",
-    "Kreis Miesbach"
+    "Hansestadt Bremen",
+    "Kreis Ammerland",
+    "Kreis Aurich - Binnenland",
+    "Kreis Aurich - Küste",
+    "Kreis Cuxhaven - Binnenland",
+    "Kreis Cuxhaven - Küste"
    ],
    "zjawiska": [
-    "snowfall"
+    "significant icy surfaces"
    ],
-   "do": "2026-11-27T00:00:00+00:00"
+   "do": "2026-11-27T06:00:00+00:00"
   },
   "PL": {
    "stopien": 1,
@@ -259,14 +260,20 @@
   },
   "RS": {
    "stopien": 2,
-   "obszary": 1,
+   "obszary": 7,
    "przyklady": [
-    "Eastern Serbia"
+    "Eastern Serbia",
+    "Kosovo i Metohija",
+    "Pomoravlje",
+    "Southeastern Serbia",
+    "Southwestern Serbia",
+    "Sumadija"
    ],
    "zjawiska": [
-    "Snow and Ice orange"
+    "Snow and Ice orange",
+    "Snow and Ice yellow"
    ],
-   "do": "2026-11-26T22:59:59+00:00"
+   "do": "2026-11-28T22:59:59+00:00"
   },
   "SK": {
    "stopien": 1,
@@ -280,8 +287,7 @@
     "Galanta"
    ],
    "zjawiska": [
-    "Moderate snowdrift warning",
-    "Moderate snow warning"
+    "Moderate snowdrift warning"
    ],
    "do": "2026-11-29T07:00:00+00:00"
   },
@@ -308,9 +314,20 @@
     "Heavy snow warning"
    ],
    "do": "2026-11-28T06:00:00+00:00"
+  },
+  "GB": {
+   "stopien": 1,
+   "obszary": 1,
+   "przyklady": [
+    "East Midlands | North East England | North West England | West Midlands | Yorkshire & Humber"
+   ],
+   "zjawiska": [
+    "Yellow ice warning"
+   ],
+   "do": "2026-11-27T14:00:00+00:00"
   }
  },
  "eu_ok": true,
  "eu_bledy": [],
- "aktualizacja": "2026-11-26T18:58:33+00:00"
+ "aktualizacja": "2026-11-27T02:09:04+00:00"
 }
