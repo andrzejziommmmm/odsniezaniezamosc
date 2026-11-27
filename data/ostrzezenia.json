@@ -22,9 +22,6 @@
     "0224",
     "0261",
     "0265",
-    "1211",
-    "1215",
-    "1217",
     "1602",
     "1603",
     "1605",
@@ -57,29 +54,14 @@
     "1201",
     "1202",
     "1203",
-    "1205",
     "1206",
-    "1207",
-    "1209",
-    "1210",
     "1213",
     "1216",
     "1218",
     "1219",
     "1261",
-    "1262",
     "1263",
     "1611",
-    "1801",
-    "1802",
-    "1803",
-    "1805",
-    "1807",
-    "1815",
-    "1817",
-    "1819",
-    "1821",
-    "1861",
     "2405",
     "2408",
     "2414",
@@ -96,30 +78,6 @@
     "2476",
     "2477",
     "2478"
-   ]
-  },
-  {
-   "id": "Sk20261126091823619",
-   "zjawisko": "Intensywne opady śniegu",
-   "stopien": 1,
-   "prawd": "80",
-   "od": "2026-11-26T20:00:00+01:00",
-   "do": "2026-11-27T12:00:00+01:00",
-   "tresc": "Prognozowane są opady śniegu powodujące przyrost pokrywy śnieżnej o 10 cm do 15 cm.",
-   "komentarz": "Brak.",
-   "biuro": "Centralne Biuro Prognoz Meteorologicznych w Warszawie",
-   "teryt": [
-    "0202",
-    "0205",
-    "0215",
-    "0217",
-    "0218",
-    "0219",
-    "0223",
-    "0264",
-    "1601",
-    "1609",
-    "1661"
    ]
   },
   {
@@ -147,111 +105,38 @@
  ],
  "pl_ok": true,
  "eu": {
-  "AT": {
+  "IS": {
    "stopien": 1,
-   "obszary": 65,
+   "obszary": 1,
    "przyklady": [
-    "Amstetten",
-    "Baden",
-    "Braunau am Inn",
-    "Bruck an der Leitha",
-    "Eferding",
-    "Freistadt"
+    "Central highlands - Uninhabited part of Iceland"
    ],
    "zjawiska": [
-    "Snow-Icewarning"
+    "Weather Warning: Snow Storm"
    ],
-   "do": "2026-11-27T07:00:00+00:00"
+   "do": "2026-11-29T00:00:00+00:00"
   },
-  "BE": {
+  "ME": {
    "stopien": 1,
-   "obszary": 6,
+   "obszary": 1,
    "przyklady": [
-    "Antwerp",
-    "Brabant",
-    "Coastal zone",
-    "East Flanders",
-    "Limburg",
-    "West Flanders"
+    "Continental and Mountains"
    ],
    "zjawiska": [
-    "Yellow warning for ice snow",
-    "Green warning for ice snow"
+    "Snow or Ice"
    ],
-   "do": "2026-11-27T10:00:00+00:00"
-  },
-  "HR": {
-   "stopien": 1,
-   "obszary": 3,
-   "przyklady": [
-    "Karlovačka",
-    "Ličko-senjska",
-    "Primorsko-goranska"
-   ],
-   "zjawiska": [
-    "Yellow snow/ice warning"
-   ],
-   "do": "2026-11-27T10:59:59+00:00"
-  },
-  "CZ": {
-   "stopien": 2,
-   "obszary": 20,
-   "przyklady": [
-    "Hlavní město Praha",
-    "Jihomoravský kraj (Blansko, Boskovice, Kuřim, Tišnov, Vyškov)",
-    "Jihomoravský kraj (Brno, Břeclav, Bučovice, Hodonín, Hustopeče, Ivančice, Kyjov, Mikulov, Moravský Krumlov, Pohořelice, Rosice, Slavkov u Brna, Šlapanice, Veselí nad Moravou, Znojmo, Židlochovice)",
-    "Jihočeský kraj (Blatná, Milevsko, Písek, Strakonice, Vimperk, Vodňany)",
-    "Jihočeský kraj (Dačice, Jindřichův Hradec, Kaplice, Trhové Sviny, Třeboň)",
-    "Jihočeský kraj (České Budějovice, Český Krumlov, Prachatice, Soběslav, Tábor, Týn nad Vltavou)"
-   ],
-   "zjawiska": [
-    "Major Snow Related Impact",
-    "Moderate Snow Related Impact"
-   ],
-   "do": "2026-11-27T10:59:59+00:00"
-  },
-  "FR": {
-   "stopien": 1,
-   "obszary": 8,
-   "przyklady": [
-    "Bas-Rhin",
-    "Doubs",
-    "Haut-Rhin",
-    "Haute-Saône",
-    "Meurthe-et-Moselle",
-    "Moselle"
-   ],
-   "zjawiska": [
-    "Moderate snow-ice warning"
-   ],
-   "do": "2026-11-27T23:00:00+00:00"
-  },
-  "DE": {
-   "stopien": 1,
-   "obszary": 22,
-   "przyklady": [
-    "Hansestadt Bremen",
-    "Kreis Ammerland",
-    "Kreis Aurich - Binnenland",
-    "Kreis Aurich - Küste",
-    "Kreis Cuxhaven - Binnenland",
-    "Kreis Cuxhaven - Küste"
-   ],
-   "zjawiska": [
-    "significant icy surfaces"
-   ],
-   "do": "2026-11-27T06:00:00+00:00"
+   "do": "2026-11-28T22:59:00+00:00"
   },
   "PL": {
    "stopien": 1,
-   "obszary": 88,
+   "obszary": 59,
    "przyklady": [
-    "Dolnośląskie Province Dzierżoniowski County",
-    "Dolnośląskie Province Jaworski County",
     "Dolnośląskie Province Jelenia Góra County",
     "Dolnośląskie Province Kamiennogórski County",
     "Dolnośląskie Province Karkonoski County",
-    "Dolnośląskie Province Kłodzki County"
+    "Dolnośląskie Province Kłodzki County",
+    "Dolnośląskie Province Wałbrzych County",
+    "Dolnośląskie Province Wałbrzyski County"
    ],
    "zjawiska": [
     "Yellow snow-ice warning"
@@ -260,14 +145,14 @@
   },
   "RS": {
    "stopien": 2,
-   "obszary": 7,
+   "obszary": 6,
    "przyklady": [
     "Eastern Serbia",
     "Kosovo i Metohija",
-    "Pomoravlje",
     "Southeastern Serbia",
     "Southwestern Serbia",
-    "Sumadija"
+    "Sumadija",
+    "Western Serbia"
    ],
    "zjawiska": [
     "Snow and Ice orange",
@@ -277,7 +162,7 @@
   },
   "SK": {
    "stopien": 1,
-   "obszary": 45,
+   "obszary": 47,
    "przyklady": [
     "Bardejov",
     "Bratislava",
@@ -291,19 +176,6 @@
    ],
    "do": "2026-11-29T07:00:00+00:00"
   },
-  "SI": {
-   "stopien": 1,
-   "obszary": 3,
-   "przyklady": [
-    "Slovenia / Central",
-    "Slovenia / North-West",
-    "Slovenia / South-East"
-   ],
-   "zjawiska": [
-    "Moderate Snow Warning"
-   ],
-   "do": "2026-11-27T05:59:00+00:00"
-  },
   "UA": {
    "stopien": 1,
    "obszary": 1,
@@ -313,21 +185,10 @@
    "zjawiska": [
     "Heavy snow warning"
    ],
-   "do": "2026-11-28T06:00:00+00:00"
-  },
-  "GB": {
-   "stopien": 1,
-   "obszary": 1,
-   "przyklady": [
-    "East Midlands | North East England | North West England | West Midlands | Yorkshire & Humber"
-   ],
-   "zjawiska": [
-    "Yellow ice warning"
-   ],
-   "do": "2026-11-27T14:00:00+00:00"
+   "do": "2026-11-27T22:00:00+00:00"
   }
  },
  "eu_ok": true,
  "eu_bledy": [],
- "aktualizacja": "2026-11-27T02:09:04+00:00"
+ "aktualizacja": "2026-11-27T11:22:18+00:00"
 }
