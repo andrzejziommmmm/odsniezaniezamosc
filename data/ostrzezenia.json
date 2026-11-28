@@ -5,106 +5,46 @@
  },
  "pl": [
   {
-   "id": "Sk20261126045329721",
-   "zjawisko": "Intensywne opady śniegu",
+   "id": "Sk20261128104940182",
+   "zjawisko": "Zawieje/zamiecie śnieżne",
    "stopien": 1,
-   "prawd": "80",
-   "od": "2026-11-26T15:00:00+01:00",
-   "do": "2026-11-27T15:00:00+01:00",
-   "tresc": "Prognozowane są opady śniegu powodujące przyrost pokrywy śnieżnej miejscami o 10 cm do 15 cm, lokalnie do 20 cm.",
+   "prawd": "70",
+   "od": "2026-11-28T18:00:00+01:00",
+   "do": "2026-11-29T07:00:00+01:00",
+   "tresc": "Prognozowane są zamiecie śnieżne spowodowane wiatrem o średniej prędkości do 35 km/h, w porywach do 55 km/h, ze wschodu i połnocnego wschodu.",
    "komentarz": "Brak.",
    "biuro": "Centralne Biuro Prognoz Meteorologicznych w Warszawie",
    "teryt": [
-    "0206",
-    "0207",
-    "0208",
-    "0221",
-    "0224",
-    "0261",
-    "0265",
-    "1602",
-    "1603",
-    "1605",
-    "1607",
-    "1610",
-    "2402",
-    "2403",
-    "2410",
-    "2411",
-    "2412",
-    "2415",
-    "2417",
-    "2461",
-    "2467",
-    "2473",
-    "2479"
-   ]
-  },
-  {
-   "id": "Sk20261126045335657",
-   "zjawisko": "Intensywne opady śniegu",
-   "stopien": 1,
-   "prawd": "80",
-   "od": "2026-11-26T18:00:00+01:00",
-   "do": "2026-11-27T18:00:00+01:00",
-   "tresc": "Prognozowane są opady śniegu powodujące przyrost pokrywy śnieżnej miejscami o 10 cm do 15 cm, lokalnie do 20 cm.",
-   "komentarz": "Brak.",
-   "biuro": "Centralne Biuro Prognoz Meteorologicznych w Warszawie",
-   "teryt": [
-    "1201",
-    "1202",
-    "1203",
-    "1206",
-    "1213",
-    "1216",
-    "1218",
-    "1219",
-    "1261",
-    "1263",
-    "1611",
-    "2405",
-    "2408",
-    "2414",
-    "2462",
-    "2463",
-    "2466",
-    "2468",
-    "2469",
-    "2470",
-    "2471",
-    "2472",
-    "2474",
-    "2475",
-    "2476",
-    "2477",
-    "2478"
-   ]
-  },
-  {
-   "id": "Sk20261126091824385",
-   "zjawisko": "Intensywne opady śniegu",
-   "stopien": 1,
-   "prawd": "80",
-   "od": "2026-11-26T21:00:00+01:00",
-   "do": "2026-11-27T15:00:00+01:00",
-   "tresc": "Prognozowane są opady śniegu powodujące przyrost pokrywy śnieżnej o 10 cm do 15 cm.",
-   "komentarz": "Brak.",
-   "biuro": "Centralne Biuro Prognoz Meteorologicznych w Warszawie",
-   "teryt": [
-    "1208",
-    "1212",
-    "1214",
-    "2401",
-    "2407",
-    "2409",
-    "2413",
-    "2416",
-    "2465"
+    "1801",
+    "1802",
+    "1805",
+    "1807",
+    "1817",
+    "1821",
+    "1861"
    ]
   }
  ],
- "pl_ok": false,
+ "pl_ok": true,
  "eu": {
+  "BG": {
+   "stopien": 2,
+   "obszary": 28,
+   "przyklady": [
+    "Blagoevgrad",
+    "Burgas",
+    "Dobrich",
+    "Gabrovo",
+    "Haskovo",
+    "Kardzhali"
+   ],
+   "zjawiska": [
+    "Snowfall, ice day!",
+    "Snowfall and strong wind!",
+    "Strong wind, ice day!"
+   ],
+   "do": "2026-11-29T22:00:00+00:00"
+  },
   "CZ": {
    "stopien": 1,
    "obszary": 3,
@@ -120,16 +60,14 @@
   },
   "IS": {
    "stopien": 1,
-   "obszary": 3,
+   "obszary": 1,
    "przyklady": [
-    "Central highlands - Uninhabited part of Iceland",
-    "Northeast Iceland",
-    "Northwest Iceland"
+    "Central highlands - Uninhabited part of Iceland"
    ],
    "zjawiska": [
     "Weather Warning: Snow Storm"
    ],
-   "do": "2026-11-29T12:00:00+00:00"
+   "do": "2026-11-29T02:00:00+00:00"
   },
   "ME": {
    "stopien": 1,
@@ -142,16 +80,53 @@
    ],
    "do": "2026-11-28T22:59:00+00:00"
   },
-  "NO": {
+  "MK": {
    "stopien": 1,
-   "obszary": 1,
+   "obszary": 8,
    "przyklady": [
-    "Mountain areas in South-Norway"
+    "Eastern region",
+    "Northeastern region",
+    "Pelagonia region",
+    "Polog region",
+    "Skopje region",
+    "Southeastern region"
    ],
    "zjawiska": [
+    "Snow Ice"
+   ],
+   "do": "2026-11-29T11:00:00+00:00"
+  },
+  "NO": {
+   "stopien": 1,
+   "obszary": 4,
+   "przyklady": [
+    "Holmestrand, Drammen, Lier, Asker, Bærum and parts of Oslo",
+    "Mountain areas in South-Norway",
+    "Parts of Nordland og Troms",
+    "Parts of Vestland and Rogaland"
+   ],
+   "zjawiska": [
+    "Ice",
+    "Snow",
     "Blowing snow"
    ],
-   "do": "2026-11-29T14:00:00+00:00"
+   "do": "2026-11-29T20:00:00+00:00"
+  },
+  "PL": {
+   "stopien": 1,
+   "obszary": 7,
+   "przyklady": [
+    "Podkarpackie Province Bieszczadzki County",
+    "Podkarpackie Province Brzozowski County",
+    "Podkarpackie Province Jasielski County",
+    "Podkarpackie Province Krosno County",
+    "Podkarpackie Province Krośnieński County",
+    "Podkarpackie Province Leski County"
+   ],
+   "zjawiska": [
+    "Yellow snow-ice warning"
+   ],
+   "do": "2026-11-29T06:00:00+00:00"
   },
   "RS": {
    "stopien": 2,
@@ -172,23 +147,22 @@
   },
   "SK": {
    "stopien": 1,
-   "obszary": 47,
+   "obszary": 38,
    "przyklady": [
+    "Banská Bystrica",
     "Bardejov",
-    "Bratislava",
+    "Brezno",
     "Bytča",
     "Dolný Kubín",
-    "Dunajská Streda",
-    "Galanta"
+    "Gelnica"
    ],
    "zjawiska": [
-    "Moderate snow warning",
     "Moderate snowdrift warning"
    ],
-   "do": "2026-11-29T07:00:00+00:00"
+   "do": "2026-11-29T05:00:00+00:00"
   }
  },
  "eu_ok": true,
  "eu_bledy": [],
- "aktualizacja": "2026-11-28T02:56:22+00:00"
+ "aktualizacja": "2026-11-28T11:37:31+00:00"
 }
