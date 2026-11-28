@@ -142,22 +142,33 @@
    ],
    "do": "2026-11-28T22:59:00+00:00"
   },
+  "NO": {
+   "stopien": 1,
+   "obszary": 1,
+   "przyklady": [
+    "Mountain areas in South-Norway"
+   ],
+   "zjawiska": [
+    "Blowing snow"
+   ],
+   "do": "2026-11-29T14:00:00+00:00"
+  },
   "RS": {
    "stopien": 2,
-   "obszary": 6,
+   "obszary": 7,
    "przyklady": [
     "Eastern Serbia",
     "Kosovo i Metohija",
+    "Pomoravlje",
     "Southeastern Serbia",
     "Southwestern Serbia",
-    "Sumadija",
-    "Western Serbia"
+    "Sumadija"
    ],
    "zjawiska": [
     "Snow and Ice orange",
     "Snow and Ice yellow"
    ],
-   "do": "2026-11-28T22:59:59+00:00"
+   "do": "2026-11-29T22:59:59+00:00"
   },
   "SK": {
    "stopien": 1,
@@ -175,20 +186,9 @@
     "Moderate snowdrift warning"
    ],
    "do": "2026-11-29T07:00:00+00:00"
-  },
-  "UA": {
-   "stopien": 1,
-   "obszary": 1,
-   "przyklady": [
-    "Chernivtsi oblast, Ivano-Frankivsk oblast, Lviv oblast, Ternopil oblast"
-   ],
-   "zjawiska": [
-    "Heavy snow warning"
-   ],
-   "do": "2026-11-27T22:00:00+00:00"
   }
  },
  "eu_ok": true,
  "eu_bledy": [],
- "aktualizacja": "2026-11-27T20:16:32+00:00"
+ "aktualizacja": "2026-11-28T02:56:22+00:00"
 }
